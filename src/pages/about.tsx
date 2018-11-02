@@ -1,15 +1,15 @@
 import React from 'react';
 import Layout from "../layout/layout.tsx"
 
- let IndexPage = () => {
+ let AboutPage = () => {
   return (
     <Layout>
-      <h1>Hello Hazelnut!</h1>
+      <h1>Hi, I am Hazelnut</h1>
       <p>
-        Boilerplate set up successfully!!! :D
+        More to come soon!
       </p>
     </Layout>
   )
 }
 
-export default IndexPage;
+export default AboutPage;

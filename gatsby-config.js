@@ -8,10 +8,12 @@ let config = {
         `gatsby-plugin-sass`,
         `gatsby-transformer-remark`,
         `gatsby-plugin-offline`,
+        `gatsby-plugin-sharp`,
+        `gatsby-transformer-sharp`,
         {
             resolve: `gatsby-plugin-typography`,
             options: {
-                pathToConfigModule: `./src/utils/typography.js`
+                pathToConfigModule: `./src/utils/typography.tsx`
             }
         },
         {
@@ -25,6 +27,13 @@ let config = {
                 display: `standalone`,
                 icon: `src/images/icon/icon.png`
             }
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+              name: `images`,
+              path: `./src/images`
+            },
         }
     ]
 }
