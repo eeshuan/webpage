@@ -4,12 +4,15 @@ import Link from 'gatsby-link';
 import Image from "gatsby-image";
 import headerStyle from "./header.module.scss";
 
-let Header = ({ data }) => {
-  console.log(data);
+let Header = (data) => {
+  let imageSrc = data.image;
+  let title = data.title;
   return (
     <div className={headerStyle.header}>
       <div className={headerStyle.pageTitle}>
-        <Link to='/'>Image</Link>
+        <Link to='/'>
+          <Image fixed={imageSrc}></Image>{title}
+        </Link>
       </div>
       <nav>
         <li>
@@ -24,15 +27,3 @@ let Header = ({ data }) => {
 }
 
 export default Header;
-
-// export let query = graphql`
-//   query Header {
-//     file(relativePath: { eq: "icon.png" }) {
-//       childImageSharp {
-//         fixed(width: 125, height: 125) {
-//           ...GatsbyImageSharpFixed
-//         }
-//       }
-//     }
-//   }
-// `

@@ -1,8 +1,12 @@
 {
+  "include": [
+    "./src/**/*"
+  ],
   "compilerOptions": {
     "target": "es5",
     "module": "commonjs",
-    "strict": true,
+    "jsx": "react",
+    // "strict": true,
     "alwaysStrict": true,
     "esModuleInterop": true
   }

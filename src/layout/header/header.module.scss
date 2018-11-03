@@ -1,7 +1,7 @@
 .header {
     margin: 0;
     padding: 0;
-    background-color: #000;
+    background-color: #e54f3b;
     position: relative;
     height: 50px;
 
@@ -17,8 +17,11 @@
 }
 
 .pageTitle {
+    color: #fff;
+    font-size: 24px;
     a {
         position: absolute;
+        display: inline-flex;
         left: 10px;
         padding-top: 12px;
     }
