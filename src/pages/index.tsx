@@ -1,15 +1,14 @@
 import React from 'react';
 import Layout from "../layout/layout"
 import { graphql } from 'gatsby';
+import Carousel from "../components/carousel"
 
  let IndexPage = props => {
    let _data = props.data;
+  //  console.log(_data);
   return (
     <Layout data={_data}>
-      <h1>Hello Hazelnut!</h1>
-      <p>
-        Boilerplate set up successfully!!! :D
-      </p>
+      <Carousel data={{images: _data.carouselImages.edges}}/>
     </Layout>
   )
 }
@@ -27,6 +26,17 @@ export let query = graphql`
       childImageSharp {
         fixed(width: 30, height: 30) {
           ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    carouselImages: allFile (filter: {relativePath: {regex: "/carousel/"}}, sort: {fields: name, order: ASC}) {
+      edges {
+        node {
+          childImageSharp {
+            fixed(width: 960, height: 540, cropFocus: ENTROPY) {
+              ...GatsbyImageSharpFixed
+            }
+          }
         }
       }
     }

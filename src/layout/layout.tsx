@@ -3,18 +3,26 @@ import layoutStyle from "./layout.module.scss";
 import Header from "./header/header";
 import Body from "./body/body";
 import Footer from "./footer/footer";
+import Helmet from "react-helmet";
 
 let Layout = props => {
   let children = props.children;
-  let _data = props.data;
   return (
-    <div className={layoutStyle.layout}>
-      <Header title={_data.site.siteMetadata.title}
-              image={_data.file.childImageSharp.fixed}
-      ></Header>
-      <Body>{children}</Body>
-      <Footer></Footer>
-    </div>
+    <React.Fragment>
+      <div className={layoutStyle.layout}>
+        <Header></Header>
+        <Body>{children}</Body>
+        <Footer></Footer>
+      </div>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+      />
+    </React.Fragment>
   );
 }
 
