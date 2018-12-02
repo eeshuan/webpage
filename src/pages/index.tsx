@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from "../layout/layout"
 import { graphql } from 'gatsby';
 import Carousel from "../components/carousel"
+import style from "./index.module.scss";
 
  let IndexPage = props => {
    let _data = props.data;
@@ -9,6 +10,11 @@ import Carousel from "../components/carousel"
   return (
     <Layout data={_data}>
       <Carousel data={{images: _data.carouselImages.edges}}/>
+      <div className={style.intro}>
+        <p className={style.me}>
+          Hi, i am Shuan!
+        </p>
+      </div>
     </Layout>
   )
 }
@@ -33,7 +39,7 @@ export let query = graphql`
       edges {
         node {
           childImageSharp {
-            fixed(width: 960, height: 540, cropFocus: ENTROPY) {
+            fixed(width: 1440, height: 700, cropFocus: ENTROPY) {
               ...GatsbyImageSharpFixed
             }
           }

@@ -1,32 +1,33 @@
 import React from "react";
 import Slider from "react-slick";
 import Image from "gatsby-image";
+import CarouselCard from "./CarouselCard";
 
 let Carousel = props => {
     let images = props.data.images;
     var settings = {
-        dots: true,
-        infinite: true,
-        speed: 2000,
-        slidesToShow: 1,
-        slidesToScroll: 1,
+        speed: 3000,
         autoplay: true,
         autoplaySpeed: 10000,
+        arrows: false,
+        dots: true
       };
     return (
         <Slider {...settings}>
-        {images.map((element, index) => {
-            return createCarouselCard(element.node.childImageSharp, index);
-        })}
+        {createCarouselCard(images)}
       </Slider>
     )
 }
 
-let createCarouselCard = (node, index) => {
+let createCarouselCard = (images) => {
     return (
-        <div id={index}>
-            <Image fixed={node.fixed}/>
-        </div>
+        images.map((element, index) => {
+            return (
+                <div key={index}>
+                    <CarouselCard data={{node: element.node.childImageSharp}}/>
+                </div>
+            );
+        })
     )
 }
 

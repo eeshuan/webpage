@@ -22,6 +22,14 @@ let Layout = props => {
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
       />
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Concert+One"
+      />
+      <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        />
     </React.Fragment>
   );
 }
