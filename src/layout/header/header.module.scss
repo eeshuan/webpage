@@ -1,28 +1,20 @@
 .header {
     margin: 0;
     padding: 0;
-    background-color: #DC143C;
-    position: relative;
+    background-color: rgba(220, 20, 60, 0.1);
+    position: absolute;
     height: 8vh;
+    width: 100%;
+    z-index: 2;
 
     nav {
         position: absolute;
         right: 0px;
+        font-family: 'Concert One', cursive;
         li {
             display: inline-block;
             padding-right: 20px;
             padding-top: 12px;
         }
-    }
-}
-
-.pageTitle {
-    color: #fff;
-    font-size: 24px;
-    a {
-        position: absolute;
-        display: inline-flex;
-        left: 10px;
-        padding-top: 12px;
     }
 }

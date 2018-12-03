@@ -6,7 +6,7 @@ import CarouselCard from "./CarouselCard";
 let Carousel = props => {
     let images = props.data.images;
     var settings = {
-        speed: 3000,
+        speed: 2000,
         autoplay: true,
         autoplaySpeed: 10000,
         arrows: false,

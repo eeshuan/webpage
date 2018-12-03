@@ -1,0 +1,16 @@
+.card {
+    position: relative;
+    .tag {
+        background-color: rgba(0, 0, 0, 0.5);
+        font-size: 30px;
+        width: 90%;
+        font-family: 'Concert One', cursive;
+        z-index: 2;
+        color: #fff;
+        position: absolute;
+        padding: 10px;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

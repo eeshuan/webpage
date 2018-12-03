@@ -1,0 +1,65 @@
+.about {
+    color: #fff;
+    font-family: 'Concert One', cursive;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    .head {
+        .profile {
+            padding-top: 80px;
+        }
+
+        .bio {
+            list-style: none;
+            font-size: 20px;
+        }
+    }
+    .intro {
+        font-size: 20px;
+        text-align: left;
+        padding-left: 10%;
+        width: 90%;
+    }
+    .work {
+        font-size: 20px;
+        text-align: left;
+        padding-left: 10%;
+        width: 90%;
+
+        li {
+            list-style: none;
+        }
+
+        .workImages {
+            float: left;
+        }
+        .workInfo {
+            padding-top: 10px;
+            padding-left: 150px;
+        }
+        .workContent {
+            margin-top: 30px;
+        }
+    }
+    .education {
+        font-size: 20px;
+        text-align: left;
+        padding-left: 10%;
+        width: 90%;
+
+        li {
+            list-style: none;
+        }
+
+        .workImages {
+            float: left;
+        }
+        .workInfo {
+            padding-top: 10px;
+            padding-left: 150px;
+        }
+        .workContent {
+            margin-top: 30px;
+        }
+    }
+}

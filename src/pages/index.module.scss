@@ -6,4 +6,29 @@
     .me {
         font-size: 100px;
     }
+    .about {
+        font-size: 40px;
+    }
+    .profile {
+        float: left;
+        margin-top: 10px;
+        margin-left: 10%;
+    }
+    span {
+        padding: 10px;
+    }
+}
+
+.bio {
+    font-family: 'Concert One', cursive;
+    padding-top: 50px;
+    color: #fff;
+    padding-bottom: 100px;
+    font-size: 30px;
+    width: 70%;
+    margin-left: 15%;
+    
+    ul {
+        list-style: none;
+    }
 }
