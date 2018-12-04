@@ -1,0 +1,54 @@
+.portfolio {
+    color: #fff;
+    font-family: 'Concert One', cursive;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+    .title {
+        padding: 20px;
+        font-size: 40px;
+    }
+
+    .card {
+        .content {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 10%;
+            width: 90%;
+            text-align: left;
+
+            .cardTitle {
+                font-size: 40px;
+            }
+
+            .cardDesc {
+                font-size: 20px;
+            }
+
+            .cardImages {
+                text-align: center;
+                padding: 20px;
+
+                .cardImageStyle {
+                    padding: 10px;                  
+                }
+                // transition:transform 0.25s ease;
+                // &:hover {
+                //     -webkit-transform:scale(1.5); /* or some other value */
+                //     transform:scale(1.5);
+                // }
+            }
+
+            .cardLink {
+                font-size: 20px;
+                a {
+                    text-decoration: underline;
+                    &:hover {
+                        color: #ff0;
+                    }
+                }
+            }
+        }
+    }
+}
